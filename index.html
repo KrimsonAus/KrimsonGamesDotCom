@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Krimson Games</title>
+</head>
+<body>
+<main>
+    <div class="topBar">
+        <img class="logo" src="/KrimsonGamesLogo.webp" alt="logo">
+        <h1>Krimson Games</h1>
+    </div>
+
+    <div class="trailerBack"></div>
+    <video onclick="PlayPauseTrailer()" id="trailer" style="display: none" autoplay src="/video/trailer1.mov"></video>
+    <img onclick="PlayPauseTrailer()" src="/images/misc/pause.png" class="pauseIco">
+    <button onclick="CloseTrailer()" class="trailerCloseButton" >Close Trailer</button>
+
+
+
+
+
+    <div class="intro">
+
+        <div class="screenshots">
+            <img onclick="IncrementScreenshot(1)" id="screenshotImg" src="/images/games/thedeadendjob/cover.png">
+        </div>
+
+        <h2>Krimson Games is an Australian games studio based out of Queensland.</h2>
+        <h2>This studio is comprised by team of 3 students with a passion for pushing the boundaries of games theming
+            and dynamics.</h2>
+        <br>
+        <h1><u>Check out what we are working on:</u></h1>
+
+        <div class="boxes" id="boxes"></div>
+        <button class="showTrailerButton" onclick="ShowTrailer()">See The Trailer for<b> The Dead End Job</b></button>
+        <br>
+        <h1><u>Meet The Team:</u></h1>
+
+        <div class="team">
+            <div class="teamMember">
+                <img src="/images/team/jai.png">
+                <h3>Jai Vanderark</h3>
+                <p>Primary Programmer</p>
+            </div>
+            <div class="teamMember">
+                <img src="/images/team/nopfp.jpeg">
+                <h3>Kevin Varghese</h3>
+                <p>Project Manager / programming</p>
+            </div>
+            <div class="teamMember">
+                <img src="/images/team/nopfp.jpeg">
+                <h3>Guy Ross</h3>
+                <p>Music and Audio</p>
+            </div>
+        </div>
+
+    </div>
+</main>
+<script src="scripts.js"></script>
+</body>
+</html>

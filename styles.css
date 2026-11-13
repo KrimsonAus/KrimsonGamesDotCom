@@ -1,0 +1,242 @@
+:root {
+    --krimson-colour: #b22222;
+}
+
+body {
+    background-color: #3b3232;
+    user-select: none;
+}
+
+.topBar {
+
+    background-color: dimgray;
+    display: flex;
+    flex-direction: row;
+}
+
+.topBar .spacer {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logo {
+    margin: 5px;
+    max-height: 70px;
+}
+
+.intro {
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    color: lightgray;
+
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.gameBox {
+
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+
+    color: midnightblue;
+
+    width: 400px;
+    height: 400px;
+
+    background-color: dimgray;
+
+    font-size: 16px;
+    margin: 5px;
+
+    transition: all 0.3s ease-in-out;
+}
+.gameBox img {
+    transition: all 0.3s ease-in-out;
+
+    width: 350px;
+    height: 200px;
+}
+
+.gameBox p{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.gameBox video{
+    width: 350px;
+    height: 200px;
+}
+
+.gameBox:hover{
+    background-color: grey;
+    box-shadow: 20px 20px;
+}
+.gameBox:hover img{
+    width: 370px;
+    height: 220px;
+}
+.gameBox:hover video{
+    width: 370px;
+    height: 220px;
+
+    display: flex;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+
+    padding:45px;
+    gap: 20px;
+
+    background-color: var(--krimson-colour);
+
+    border-radius: 5px;
+}
+
+.team{
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+
+    height: auto;
+    width: auto;
+
+    padding:20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 20px;
+
+    background-color: midnightblue;
+
+
+}
+.teamMember{
+    color: wheat;
+    background-color: darkslategrey;
+    padding: 10px;
+    border-radius: 20px;
+    width: 200px;
+    height: 250px;
+
+    overflow: clip;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.teamMember img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.teamMember:hover{
+    background-color: darkslateblue;
+}
+
+.teamMember:hover img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+#trailer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100vh;
+}
+
+.pauseIco{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+
+    width: 200px;
+
+}
+
+.trailerBack{
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+
+    width: 100%;
+    height: 500%;
+}
+
+.trailerCloseButton{
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 750%);
+
+    width: 200px;
+    height: 50px;
+
+    font-size: 25px;
+}
+
+.showTrailerButton{
+    background-color: var(--krimson-colour);
+
+    margin-top: 10px;
+    padding: 5px;
+
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+
+    border-radius: 10px;
+
+    transition: all 0.2s ease-in-out;
+}
+.showTrailerButton:hover{
+    color: wheat;
+    background-color: darkslategrey;
+
+    font-size: 19px;
+}
+
+.screenshots{
+    background-color: darkslategrey;
+
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+    height: 550px;
+
+    width: 850px;
+
+}
+
+.screenshots img{
+    height: 500px;
+    width: 800px;
+
+    transition: all 0.5s ease-in-out;
+}
