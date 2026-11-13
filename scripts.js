@@ -21,7 +21,7 @@ async function SetupBoxes() {
         const image = document.createElement('img');
 
         const result = games[i].replace(/\s+/g, '').toLowerCase();
-        image.src = "/images/games/" + result + "/cover.png"
+        image.src = "/images/games/" + result + "/cover.webp"
 
 
         // const video = document.createElement('video');
@@ -125,7 +125,7 @@ let intervalId = setInterval(() => {
 }, 5000);
 
 function IncrementScreenshot(type){
-    screenshotImg.src = '/images/screenshots/'+imgId+".png";
+    screenshotImg.src = '/images/screenshots/'+imgId+".webp";
     imgId++;
     if(imgId>8){
         imgId=1;
