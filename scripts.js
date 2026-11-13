@@ -86,6 +86,11 @@ async function readTextFile(url) {
 }
 
 function ShowTrailer(){
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
     document.getElementsByClassName('trailerBack')[0].style.display = 'block';
     document.getElementsByClassName('trailerCloseButton')[0].style.display = 'block';
 
